@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (C) 2021 The Android Open Source Project.
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,19 +17,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/amphibianListFragment">
+    app:startDestination="@id/amphibianListFragment"
+    >
 
     <fragment
         android:id="@+id/amphibianListFragment"
         android:name="com.example.amphibians.ui.AmphibianListFragment"
-        android:label="AmphibianListFragment" >
+        android:label="AmphibianListFragment"
+        >
         <action
             android:id="@+id/action_amphibianListFragment_to_amphibianDetailFragment"
-            app:destination="@id/amphibianDetailFragment" />
+            app:destination="@id/amphibianDetailFragment"
+            />
     </fragment>
     <fragment
         android:id="@+id/amphibianDetailFragment"
         android:name="com.example.amphibians.ui.AmphibianDetailFragment"
         android:label="fragment_amphibian_detail"
-        tools:layout="@layout/fragment_amphibian_detail" />
+        tools:layout="@layout/fragment_amphibian_detail"
+        />
 </navigation>
